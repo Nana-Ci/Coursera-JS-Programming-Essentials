@@ -6,10 +6,24 @@
 <body>
    <h1>Weather Report</h1>
 
-  <form id="weatherForm">
-    <label for="city">Enter City:</label>
-    <input type="text" id="city" name="city">
-    <button type="submit">Get Weather</button>
+  <form id="weatherForm_City">
+    <fieldset>
+        <legend>Search by City</legend>
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city">
+        <button type="submit">Get Weather</button>
+    </fieldset>
+  </form>
+
+  <form id="weatherForm_LatLon">
+    <fieldset>
+        <legend>Search by Lattitude&Longitude</legend>
+        <label for="lat">Enter Lattitude:</label>
+        <input type="text" id="lat" name="lat">
+        <label for="lat">Enter Longitude:</label>
+        <input type="text" id="lon" name="lon">
+        <button type="submit">Get Weather</button>
+    </fieldset>
   </form>
 
   <div id="weatherInfo"></div>
